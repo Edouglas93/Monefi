@@ -1,1 +1,11 @@
 # Monefi
+
+MoneFi is a fintech platform that aims to make financial services accessible to underserved entrepreneurs. They connect these borrowers with the right financial allies, regardless of their background, and provide resources and funding to amplify their businesses. MoneFi addresses the issue of conventional lenders sidelining minority-owned, woman-led, and economically disadvantaged businesses by introducing alternative credit profiles and facilitating connections with lenders and credit partners. Their platform uses robust lending software to enhance funding prospects and minimize fraud. They also focus on cross-border payment partnerships to enable seamless transfers between platforms. MoneFi is driven by a social mission to break the cycle of financial exclusion, reinvest in communities, and foster financial inclusion and empowerment.
+
+I developed the loan application component using the Microsoft stack. This involved establishing relationships between tables to ensure the loan applicants' relevant data could be retrieved through primary key and foreign key associations, enabling both one-to-one and one-to-many relationships. I also implemented stored procedures for functions such as selecting all records, retrieving by loan type, and searching by user.
+
+On the backend, I utilized the .NET framework and implemented a RESTful API controller for managing the loan application list. I designed the loan applicant model and created service calls and an interface that defined the method signatures for retrieving paginated results, filtering by loan type, and searching by user.
+
+For the front end, I leveraged React to make asynchronous calls to the API endpoints using Axios. I then mapped the retrieved data to a card template and rendered it in a tabular format using a React table component. The last column of the table featured "view more" buttons that directed users to either a detailed view page for the borrower or the business, based on the type of loan. Additionally, I implemented navigation buttons to allow users to easily return to the loan application list view page.
+
+Overall, this implementation involved utilizing industry-standard technologies and best practices to create a robust and user-friendly loan application component with seamless integration between the frontend and backend components.
